@@ -1,0 +1,164 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  background: #0f0f0f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00ff99;
+}
+
+/* Balance Section */
+.balance {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.balance p {
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+
+/* Income & Expense Box */
+.income-expense-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.box {
+  width: 48%;
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.box.income p {
+  color: #00ff99;
+}
+
+.box.expense p {
+  color: #ff4b4b;
+}
+
+/* Form */
+.transaction-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.transaction-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #00ff99;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn{
+      width: 100%;
+  padding: 10px;
+
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #5ba100;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn:hover {
+    background: #384701;
+}
+.transaction-form button:hover {
+  background: #00cc7a;
+}
+
+/* Transaction List */
+.transaction-list {
+  margin-top: 25px;
+}
+
+.transaction-list ul {
+  list-style: none;
+}
+
+.transaction-list li {
+  background: #222;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.transaction-list li.plus {
+  border-right: 5px solid #00ff99;
+}
+
+.transaction-list li.minus {
+  border-right: 5px solid #ff4b4b;
+}
+.clear-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+.clear-btn:hover {
+  background: #ff2222;
+}
+
+
+/* Responsive */
+@media (max-width: 480px) {
+  .income-expense-box {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

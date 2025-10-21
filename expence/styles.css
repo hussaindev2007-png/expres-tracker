@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  padding: 20px 50px;
+  font-size: 1.5rem;
+}
+.logo-highlight {
+  color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px;
+  min-height: 80vh;
+}
+
+.hero-text {
+  max-width: 45%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  color: #bbb;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #00bcd4;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0099aa;
+}
+
+/* Hero Image */
+.hero-img img {
+  width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 188, 212, 0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #222;
+}
+
+/* 📱 Responsive Design */
+
+/* --- Tablet --- */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 40px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .hero-img img {
+    width: 80%;
+  }
+
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+/* --- Mobile --- */
+@media (max-width: 600px) {
+  body {
+    font-size: 90%;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+
+  .hero-img img {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
