@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* Body */
+
 body {
   background: #0f0f0f;
   color: #fff;
@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
 }
 
-/* Container */
+
 .container {
   background: #1a1a1a;
   padding: 25px;
@@ -32,7 +32,7 @@ h1 {
   color: #00ff99;
 }
 
-/* Balance Section */
+
 .balance {
   text-align: center;
   margin-bottom: 25px;
@@ -43,7 +43,7 @@ h1 {
   margin-top: 10px;
 }
 
-/* Income & Expense Box */
+
 .income-expense-box {
   display: flex;
   justify-content: space-between;
@@ -66,7 +66,7 @@ h1 {
   color: #ff4b4b;
 }
 
-/* Form */
+
 .transaction-form input {
   width: 100%;
   padding: 10px;
@@ -110,7 +110,7 @@ h1 {
   background: #00cc7a;
 }
 
-/* Transaction List */
+
 .transaction-list {
   margin-top: 25px;
 }
@@ -151,7 +151,7 @@ h1 {
 }
 
 
-/* Responsive */
+
 @media (max-width: 480px) {
   .income-expense-box {
     flex-direction: column;
@@ -162,3 +162,4 @@ h1 {
     margin-bottom: 10px;
   }
 }
+
